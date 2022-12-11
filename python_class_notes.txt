@@ -1,0 +1,154 @@
+FIRST CLASS
+Python is an interpreted laguage as line by line code execute garna mailxa. High level object oriented programming language.
+Program is a set of instructions that computer uses to perform certain tasks
+Instructions that Python interpreter can execute is called statement
+pip is a standard package used to install packages
+7 arithmetic operators in python modulus, exponentiation(**), floor division(//), add, sub. mul, div
+
+SECOND CLASS
+Python is elegant short syntax and dynamic typing, together with it's interpreted nature, make it an ideal language for scripting
+Typing: Type-checking in programming language
+Python is strongly-typed language as it does not allow "type-coercion" Eg: "1"+2 (not executed). Java script is a weakly-typed language. In js "1"+2 gives 12 . "1"-2 gives -1.
+Compile language typically converts the source code to machine code at once
+Interpreted language converts into machine code line by line
+Operator: +,-,// etc
+Operand: Variables used
+=: Assignment operator
+Keywords are reserved words. We cannot use it as a variable name, function name or any other identifier
+Keywords are used to define structure of language
+In python Keywords are case sensitive. Mysql is case insensitive.
+IDENTIFIERS can be combination of lowercase, uppercase, digits or an underscore
+
+THIRD CLASS
+There are 6 data types in Python: Numbers, Strings, List, Tuple, Set, Dictionary
+Typecasting : input user bata lida input() takes default string type but eslai add garnu paryo vani hamle int vanera linu parxa
+Typechecking simply means checking the data type of the variable whether it is int, float, complex, str, etc.
+Type conversion in python is explicit. Because the user casts or changes the data types of the objects. We use predefined functions such as int(), float(), str() to chnage or convert the data types.
+
+FOURTH CLASS
+Indentation helps to determine the blocks in python. 4-spaces or 1-tab in python is it's indentation.
+Expression: condition vitra ko statement..  Expression always returns a value. It is a combination of values, variables, operators and calls to functions. 
+17  				 # value in itself is an expression
+x  =  int(3.14) 		 # int built-in function as expression
+y  =  3.14			 # assignment as expression
+What kind of expression is if user_input % 2 == 0 ? It is a conditional expression. It is expression as it gives value.
+If statement can come independently, while else cannot come independently. else statement always follows if statement.
+Booleans represent one of the two values : True or False. Evaluation of expression can be done in python to get one of two answers. When we compare two values, the expression is evaluated and Python returns the Boolean answer.
+
+FIFTH CLASS
+Conditionals: Check whether the given condition is true or false
+== equals to, = assignmet operator
+we do not write conditions in if
+
+SIXTH CLASS
+Nesting of Conditionals: if or else vitra feri if-else condition aaunu
+Indentation is the only way to figure out level of nesting.
+
+Extra: ``` python  ``` helps us write python code in markdown
+	  ``` js ``` helps us write js code in markdown
+          ``` bash ``` helps us write commands in markdown
+
+Chaining: if...elif...else 
+
+SEVENTH CLASS
+Logical operators : and, or, not
+not is negation.  not True means False
+and : both condition should be true to be true
+or: any one condition can be true to be true
+
+assert is a debugging technique which raises exception through AssertionError when the condition is False, but does nothing when the condition is True.
+
+can we using floating point while indexing? No, we cannot. Index must be an integer.
+
+EIGHTH CLASS
+range: The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
+for reverse range we must start from the length of the string - 1. -1 should be done as length counts from 1 while range starts from 0
+similarly end should be -1 as if we put 0, the output will not print and the step should be  -1 as we are going downsteps from higher value in the array 1 per step. 
+
+NINTH CLASS
+diff between continue, break and pass?tly in
+continue : continue statement skips one iteration of a loop if condition matches or is true
+break: break statement breaks down loop, the loop won't run any further if the condition is true
+pass: pass is a placeholder to write a code
+
+String is a character sequence
+substring are ordered subsequences of a string
+python strings are immutable data type. The memory location the text is in does not get updated. gts updated only in new memory loaction.
+Immutable data type must be reassigned
+can we multiply string? strings can be added or multiplied|
+
+TENTH CLASS
+List: collection of items under a single variable. List is represented by big bracket
+
+for index in range
+for items in iterable
+
+not in and in are membership operators used to check if the item is in the list or not
+
+List allows duplicate values
+
+ELEVENTH CLASS
+Negative Indexing is used to in Python to begin slicing from the end of the string i.e. the last.
+Append: Add value at the end of the list
+cannot assign list to a variable such as : a = a.append(list2) is not allowed. shows data type error. but the same is allowed in strings
+stack : uses LIFO principle to pop out values. There are two operations in stack push and pop(). The push operation is performed by append() in stack.
+queue: uses FIFO principle 
+list comprehension : elegant way of writing shorter syntax in python in list
+
+TWELVETH CLASS
+Tuple is immutable data type used to store multiplw item on single variable - written in round brackets
+Tuple items are ordered, unchangeable and allow duplicate values
+Tuple items are indexed. Positive indexing [0] and negative indexing [-1]
+Tuple can also consist of a list
+
+DIFFERENCES List Vs. Tuple
+Tuple is immutable while list is mutable
+We cannot perform write operations in Tuple which we can perform in list. We can only read it.
+
+Data can be added to Tuple using type casting method. but memory location will not remain the same
+
+LIST, TUPLE, SET and DCCTIONary are the built-in data types of python
+
+Set
+used to store multiple items 
+set is mutable but it's value cannot be replaced by indexing
+It only stores unique vaalue
+
+What is frozen set?
+Frozen set is just and inmutable version of python set
+
+None 
+None is a data type of its own (NoneType) and only None can be None.
+The None keyword is used to define a null value, or no value at all.
+None is not the same as 0, False, or an empty string,
+0, False or empty string are values but none means nothing, so they are not the same.
+
+Identity Operators in python are : is and  is not
+They are used to compare the objects, not if they are equal but if they are on the same memory location or not.
+
+THIRTEENTH CLASS
+Dictionary is used to store data vales: key values in pair
+keys can be either string, int or float
+
+Only in case of key, val use items else use item 
+
+FOURTEENTH CLASS
+x = 5              y = 6          etc are positional arguments
+argument or parameter is something that you pass inside the function
+
+In computer programming, a default argument is an argument to a function that a programmer is not required to specify.
+def multiply(x = 5, y):    # This cannot be done as non default argument always follows default argument.
+
+Function must be called in order to access the global variable
+
+Special keywords in python: args and kwargs. Allows function to take variable length argument.
+*args allows us to write function that accepts multiple arguments. They take tuples as input type.
+*args passes variable number or non-keyworded arguments where tuple operations can be performed.
+
+**kwargs are keyword arguments which means they are in dictionary. They take input as positional argument which converts as dictionary type.
+kwargs is a key = value syntax
+
+(*args passes variable number of non-keyworded arguments and on which operation of the tuple can be performed. **kwargs passes variable number of keyword arguments dictionary to function on which operation of a dictionary can be performed.)
+
+Provides flexibilty to function and also useful if we do not know how many parameters should be passed in function
+
